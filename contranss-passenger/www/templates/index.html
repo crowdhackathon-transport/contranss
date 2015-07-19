@@ -1,0 +1,12 @@
+<ion-view view-title="Con.Tran.S.S">
+	<ion-content>
+		<div class="list list-inset">
+			<ion-item ng-repeat="item in notifications">
+			<span class="badge badge-assertive" style="color: #{{ item.route.text_color }}; background-color: #{{item.route.color}};">
+			{{ item.route.short_name }}
+			</span>
+			{{ item.type.name }} <span am-time-ago="item.timestamp"></span>
+			</ion-item>
+		</div>
+	</ion-content>
+</ion-view>

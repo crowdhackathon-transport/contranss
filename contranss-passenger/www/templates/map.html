@@ -1,0 +1,26 @@
+<ion-view view-title="{{ title }}">
+	<ion-content>
+		<style scoped="" type="text/css">
+			.angular-google-map-container { height: 660px; }
+		</style>
+		<ui-gmap-google-map center='map.center' zoom='map.zoom'>
+		<ui-gmap-markers models="routes" coords="'self'" click="onClick">
+		<ui-gmap-windows show="true" options="windowoptions">
+		<div ng-non-bindable>
+			<h3><span class="badge"  style="color: #{{ text_color }}; background-color: #{{color}};">{{ short_name }}</span></h3>
+			<p><b>{{ time | date : 'yyyy MMMM d, HH:mm:ss' }}</b></p>
+			<p class="mute"></p>
+		</div>
+		</ui-gmap-windows>
+		</ui-gmap-markers>
+
+		</ui-gmap-google-map>
+	</ion-content>
+	<div class="row" style=" position: fixed; bottom: 20px;">
+		<div class="col">
+			<button class="button button-block button-balanced" ng-click="back(choice)">
+			Πίσω
+			</button>
+		</div>
+	</div>
+</ion-view>

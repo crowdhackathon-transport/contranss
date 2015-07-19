@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="col-sm-6 col-md-4 col-md-offset-4" style="margin-top:10em;">
+        <div class="widget">
+            <rd-widget-header icon="" title="Εγγραφή">
+            </rd-widget-header>
+            <div class="widget-body">
+                <div class="form-bg form-signin">
+                    <form ng-submit="submit()">
+                        <p>
+                            <input class="form-control" ng-model="user.username" type="text" name="user" placeholder="Όνομα Χρήστη" />
+                        </p>
+                        <p>
+                            <input class="form-control" ng-model="user.password" type="password" name="pass" placeholder="Κωδικός Πρόσβασης" />
+                        </p>
+                        <p>
+                            <input class="form-control" ng-model="user.password" type="password" name="pass" placeholder="Επιβεβαίωση Κωδικού Πρόσβασης" />
+                        </p>
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Εγγραφή</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<ion-view view-title="Διαδρομή">
+	<ion-content>
+		<ion-list>
+		<div class="row">
+			<div class="col">
+				<button class="button button-block ion-wrench button-assertive" style="height: 86px; line-height: 24px;"  ng-click="post(2)">
+				<small><br />Βλάβη</small>
+				</button>
+			</div>
+			<div class="col">
+				<button class="button button-block ion-ios-pulse-strong button-energized" style="height: 86px; line-height: 24px;"  ng-click="post(4)">
+				<small><br />Ατύχημα</small>
+				</button>
+			</div>
+			<div class="col">
+				<button class="button button-block ion-ios-people button-calm" style="height: 86px; line-height: 24px;"  ng-click="post(5)">
+				<small><br />Υπερπληρότητα</small>
+				</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<button class="button button-block ion-android-walk button-royal" style="height: 86px; line-height: 24px;"  ng-click="post(3)">
+				<small><br />Παρακώληση Λεωφ/λορίδας</small>
+				</button>
+			</div>
+			<div class="col">
+				<button class="button button-block ion-android-hand button-balanced" style="height: 86px; line-height: 24px;"  ng-click="post(6)">
+				<small><br />Συμφόριση</small>
+				</button>
+			</div>
+			<div class="col">
+				<button class="button button-block ion-social-tux button-dark" style="height: 86px; line-height: 24px;"  ng-click="post(7)">
+				<small><br />Άλλο</small>
+				</button>
+			</div>
+		</div>
+		</ion-list>
+	</ion-content>
+	<div class="row" style=" position: fixed; bottom: 20px;">
+          <button class="button button-block button-assertive" ng-click="stop()">
+            ΤΕΡΜΑΤΙΣΜΟΣ
+          </button>
+        </div>
+</ion-view>

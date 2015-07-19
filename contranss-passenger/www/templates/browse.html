@@ -1,0 +1,19 @@
+<ion-view view-title="{{ title }}">
+	<ion-content>
+		<div class="list list-inset">
+			<ion-item ng-repeat="item in notifications">
+			<span class="badge badge-assertive" style="color: #{{ item.route.text_color }}; background-color: #{{item.route.color}};">
+			{{ item.route.short_name }}
+			</span>
+			{{ item.type.name }} <span am-time-ago="item.timestamp"></span>
+			</ion-item>
+		</div>
+	</ion-content>
+	<div class="row" style=" position: fixed; bottom: 20px;">
+		<div class="button-bar">
+			<button class="button button-block button-royal ion-thumbsdown" ng-click="complaint()"> Σχόλιο</button>
+			<button class="button button-block button-assertive" ng-click="back()"> Πισω</button>
+			<button class="button button-block button-balanced ion-android-bus" ng-click="map()"> Χάρτης</button>
+		</div>
+	</div>
+</ion-view>

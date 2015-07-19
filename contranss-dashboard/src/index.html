@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" ng-app="Dashboard">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Dashboard | #transport</title>
+  <!-- STYLES -->
+  <!-- build:css lib/css/main.min.css -->
+  <link rel="stylesheet" type="text/css" href="components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="components/rdash-ui/dist/css/rdash.min.css">
+  <link rel="stylesheet" type="text/css" href="components/sweetalert/dist/sweetalert.css">
+  <!-- endbuild -->
+  <!-- SCRIPTS -->
+  <!-- build:js lib/js/main.min.js -->
+  <script type="text/javascript" src="components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  <script type="text/javascript" src="components/angular-cookies/angular-cookies.min.js"></script>
+  <script type="text/javascript" src="components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script type="text/javascript" src="components/sweetalert/dist/sweetalert.min.js"></script>
+  <script type="text/javascript" src="components/lodash/lodash.js"></script>
+  <script type="text/javascript" src="components/angular-google-maps/dist/angular-google-maps.js"></script>
+  <script type="text/javascript" src="components/mqtt/mqtt.js"></script>
+  <script type="text/javascript" src="components/angular-breadcrumb/dist/angular-breadcrumb.min.js"></script>
+  <script type="text/javascript" src="components/angular-resource/angular-resource.min.js"></script>
+  <script type="text/javascript" src="components/moment/moment.js"></script>
+  <script type="text/javascript" src="components/angular-moment/angular-moment.min.js"></script>
+  <script type="text/javascript" src="components/moment/locale/el.js"></script>
+  <!-- endbuild -->
+  <!-- Custom Scripts -->
+   <script src="https://maps.googleapis.com/maps/api/js?libraries=weather,visualization&sensor=false&language=en&v=3.17"></script>
+  <script type="text/javascript" src="js/dashboard.min.js"></script>
+</head>
+<body ng-controller="MasterCtrl">
+  <div data-ui-view></div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<ion-view view-title="Con.Tran.S.S">
+	<ion-content>
+		<div class="list list-inset">
+			<label class="item item-input">
+				<i class="icon ion-search placeholder-icon"></i>
+				<input type="text" ng-model="query" ng-change="search(query)" placeholder="Search">
+			</label>
+			<ion-item ng-repeat="item in routes" ng-click="change_route(item.id)">
+				{{ item.short_name }} | {{ item.long_name }}
+			</ion-item>
+		</div>
+	</ion-content>
+	<div class="row" style=" position: fixed; bottom: 20px;">
+		<div class="col">
+			<button class="button button-block button-balanced" ng-click="start(choice)" ng-show="route_id">
+			ΕΚΙΝΗΣΗ
+			</button>
+		</div>
+	</div>
+</ion-view>
