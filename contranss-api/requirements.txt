@@ -16,5 +16,5 @@ djangorestframework-xml==1.2.0
 elasticsearch==1.6.0
 tablib==0.10.0
 unicodecsv==0.13.0
-urllib3==1.10.4
+urllib3==1.26.5
 wsgiref==0.1.2
